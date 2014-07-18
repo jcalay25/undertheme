@@ -94,6 +94,8 @@ add_action( 'widgets_init', 'under_widgets_init' );
 function under_scripts() {
 	wp_enqueue_style( 'under-style', get_stylesheet_uri() );
 
+	wp_enqueue_style( 'event-planners-layout-style' , get_template_directory_uri() . '/layouts/content-sidebar.css'); //calls the content-sidebar style for layout
+	
 	wp_enqueue_script( 'under-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'under-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );

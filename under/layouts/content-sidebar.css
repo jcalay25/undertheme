@@ -1,27 +1,24 @@
 /*
-Theme Name: under
-Layout: Content-Sidebar
-*/
-
-/*
 Theme Name: Event Planners
 Layout: Content-Sidebar
 */
 
-.content-area {
-    width: 100%;
-    float: left;
-    margin-left: -380px;
-    padding-left: 380px;
+.site-content {
+    padding-bottom: 2em;
+    
+    background-color: white;
+  
 }
-.site-main {
-    background: #b2b2b2;
+.single .site-content,
+.page .site-content { 
+    background: #fff; 
+    background: hsl(0, 0%, 100%);
 }
 .site-content .widget-area {
     width: 380px;
     float: right;
     padding: 4rem;
-    background: #fff;
+    background: #F5A685;
 }
 .site-footer {
     clear: both;
@@ -29,11 +26,11 @@ Layout: Content-Sidebar
 }
 
 .entry-header,
+.post-navigation,
 .entry-content,
-.entry-meta,
 .entry-footer,
 .tag-links,
-.post-navigation,
+
 .comments-area,
 .paging-navigation {
     position: relative;
@@ -51,6 +48,16 @@ Layout: Content-Sidebar
         padding-left: 380px;
     }
     
+    .entry-header,
+    .entry-content,
+    .entry-footer,
+    .tag-links,
+    .post-navigation,
+    .comments-area,
+    .paging-navigation {
+    	margin-right: 0;
+    	}
+    
     @media screen and (max-width: 1159px) {  
     .site-content .widget-area {
         width: auto;
@@ -58,5 +65,5 @@ Layout: Content-Sidebar
         float: none;
         margin: 1em auto 0;
     }
-    
 }
+    
